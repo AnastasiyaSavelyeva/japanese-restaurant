@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noodle Place</title>
+        <link rel="icon" href="logo.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Tajawal:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <nav id="myNav" class="topnav">
+                <img class="logo" src="logo.jpg" alt="logo" >
+                <p class="item start" onclick="myFunctionMobile()"><span class="name first">Japanese</span>
+                <br><span class="name second">Restaurant</span></p>
+                <div id="myLinks">
+                    <a class="item" href="#about" onclick="myFunctionMobile()">About Us</a>
+                    <a class="item" href="#gallery" onclick="myFunctionMobile()">Gallery</a>
+                    <a class="item" href="#menu" onclick="myFunctionMobile()">Menu</a>
+                    <a class="item" href="#contacts" onclick="myFunctionMobile()">Contacts</a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="image-position">
+                <div>
+                <img  class="image" src="image.jpg" alt="sushi">;
+                </div>
+                <div class="off">   
+                    <img class="boom" src="boom.png" alt="boom">
+                    <p class="bth">50% OFF! Birthday sushi roll</p>
+                </div> 
+                <div class="squares">
+                    <div class="square one"></div>
+                    <div class="square two"></div>
+                    <div class="text">
+                    <p><span>Discover</span> <br> a <span>new</span> planet <br> of <span>flavors!</span> </p>
+                    <a href="tel:16137242412"><button class="btn_order" id="btnOrder">Order now</button></a>  
+                    </div> 
+                </div>      
+            </div>     
+        </div>
+        <section id="about">
+            <div class="container_two">
+            <div class="center" data-aos="fade-up">
+                <h1>𑁋 About us 𑁋</h1>
+                <h2>Our concept is simple - <span> we love what we do </span> and
+                    respect each customer, so you will get <span> the highest quality food and pleasant service.</span>
+                </h2>
+                <h3>We offer you:</h3>
+            </div>
+            <div class="flexy" data-aos="fade-up">
+                <div class="offer">
+                    <div class="circle"></div>
+                    <img class="sushi" src="sushi.png" alt="sushi" width="90px">
+                    <p class="text_offer">huge range of Japanese dishes</p>
+                </div>
+                <div class="offer">
+                    <div class="circle"></div>
+                    <img class="sushi" src="atmosphere.png" alt="atmosphere" width="90px">
+                    <p class="text_offer">real Japanese atmosphere and service</p>
+                </div>
+                <div class="offer">
+                    <div class="circle"></div>
+                    <img class="sushi" src="fresh.png" alt="fresh" width="90px">
+                    <p class="text_offer">the freshest ingredients</p>
+                </div>
+                <div class="offer">
+                    <div class="circle"></div>
+                    <img class="sushi" src="place.png" alt="place" width="90px">
+                    <p class="text_offer">convenient location</p>
+                </div>
+                <div class="offer">
+                    <div class="circle"></div>
+                    <img class="sushi" src="delivery.png" alt="delivery" width="90px">
+                    <p class="text_offer">fast delivery</p>
+                </div>
+                <div class="offer">
+                    <div class="circle"></div>
+                    <img class="sushi" src="discount.png" alt="delivery" width="90px">
+                    <p class="text_offer">permanent promotions and discounts</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container_three" data-aos="fade-up">
+                <div class="center">
+                    <h1>𑁋 Gallery 𑁋</h1>
+                </div>
+                <div class="carusel" data-aos="fade-up">
+                    <button id="back" class="btn">🢔</button>
+                    <img id="pictures" src="carusel.jpg" alt="clips" width="800px" height="500px">
+                    <button id="next" class="btn">🢖</button>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container_four" data-aos="fade-up">
+                <div class="center">
+                    <h1>𑁋 Menu 𑁋</h1>
+                </div>
+                <div class="menu" data-aos="fade-up">
+                    <img class="margin" src="menu_one.jpg" alt="menu">
+                    <img class="margin" src="menu_two.jpg" alt="menu">
+                    <img class="margin" src="menu_three.jpg" alt="menu">
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="container_five">
+                <div class="center" data-aos="fade-up">
+                    <h1>𑁋 Contacts 𑁋</h1>
+                </div>
+                <div class="cubs" data-aos="fade-up">
+                    <div class="cub three"></div>
+                    <div class="cub four"></div>
+                </div>
+                <div class="center">
+                    <form
+                        action="https://formspree.io/f/moqrboea"
+                        method="POST">
+                        <label>
+                            <p>Your phone number:</p>
+                            <input type="tel" name="tel">
+                            <p>Your email: </p>
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            <p>Your message: </p>
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit" class="submit">Submit now</button>
+                    </form>
+                </div>
+                <div class="contacts">
+                    <div class="social">
+                        <a href="https://www.instagram.com/"><img class="margin-lock" src="instagram.png" alt="instagram" width="60px"></a>
+                        <a href="http://facebook.com/"><img class="margin-lock" src="facebook.png" alt="facebook" width="60px"></a>
+                        <a href="https://www.whatsapp.com/"><img class="margin-lock" src="whatsapp.png" alt="whatsapp" width="60px"></a>
+                    </div>
+                    <div class="work">
+                        <p>+16137242412</p>
+                        <p>10:00 a.m. - 22:00 p.m</p>
+                    </div>
+                    <div>
+                        <img class="logotip" src="logo.jpg" alt="logo" width="150px">
+                    </div>
+                    <div class="adress">
+                        <p>1311 Wellington St. W,</p>
+                        <p>Ottawa, ON K1Y 3B1,</p>
+                        <p>Canada</p>
+                    </div>
+                    <div class="map">
+                        <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.5138129817733!2d-75.73814168448175!3d45.39897747910029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce041785fea1f3%3A0x68c47e6667c0c1f!2zMTMxMSBXZWxsaW5ndG9uIFN0LiBXLCBPdHRhd2EsIE9OIEsxWSAzQjEsINCa0LDQvdCw0LTQsA!5e0!3m2!1sru!2sru!4v1662750578518!5m2!1sru!2sru" width="300" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>\
